@@ -24,7 +24,7 @@ const Post = ({ post }) => {
 
           <div className="d-flex justify-content-center gap-4 mt-3">
             <a
-              href="https://github.com/your-github-username"
+              href="https://github.com/YuviX-514"
               target="_blank"
               rel="noopener noreferrer"
               className="icon-link"
@@ -32,7 +32,7 @@ const Post = ({ post }) => {
               <FaGithub size={26} />
             </a>
             <a
-              href="https://linkedin.com/in/your-linkedin-username"
+              href="https://www.linkedin.com/in/yuvraj-singh-7aa0b6232/"
               target="_blank"
               rel="noopener noreferrer"
               className="icon-link text-primary"
