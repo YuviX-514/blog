@@ -4,9 +4,9 @@ import { format } from "timeago.js";
 
 const Post = ({ post }) => {
   return (
-    <div className="d-flex justify-content-center my-3">
+    <div className="flex-center">
       <div
-        className="card shadow-lg border-0 rounded-4 p-3"
+        className="shadow-lg border-0 rounded-4 p-3"
         style={{ width: "24rem", backgroundColor: "#f8f9fa" }}
       >
         <div className="card-header bg-primary text-white fw-bold text-center rounded-top">
