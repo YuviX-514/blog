@@ -21,7 +21,6 @@ const App = () => {
     <div className="app-container">
       <div className="main-content">
         <Sidebar selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
-
         <div className="content">
           <Header />
           <HeroSection>
