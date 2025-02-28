@@ -1,28 +1,44 @@
 .app-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
-}
-
-.main-content {
-  display: flex;
-  flex: 1; 
-}
-
-.sidebar {
   min-height: 100vh;
 }
-
+.main-content {
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh; /* Use height instead of min-height */
+  width: 250px;
+  overflow-y: auto;
+  background-color: #1e1e1e;
+  flex-shrink: 0;
+  z-index: 10; /* Ensure sidebar stays above other content */
+}
 .content {
   display: flex;
   flex-direction: column;
-  flex: 1; 
+  flex: 1;
 }
-
+.header {
+  position: sticky;
+  top: 0;
+}
 .footer {
+  bottom: 0;
+  background: rgb(252, 248, 248);
   margin-top: auto;
 }
-.username{
+.flex-center {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  margin-top: 1rem; /* Equivalent to Bootstrap my-3 (margin-y: 1rem) */
+  margin-bottom: 1rem;
+}
+.username {
   background-color: antiquewhite;
 }
 .hover-effect:hover {
@@ -45,7 +61,7 @@
 }
 .PostList {
   max-width: 800px;
-  margin: 2rem auto; 
+  margin: 2rem auto;
   background-color: #ffffff;
   padding: 1.5rem;
   border-radius: 10px;
@@ -81,6 +97,6 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.post-card:hover {
+/* .post-card:hover {
   transform: scale(1.02);
-}
+} */

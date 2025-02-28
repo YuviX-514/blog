@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Sidebar from "./components/SideBar";
+import Sidebar from "./components/Sidebar";
 import PostList from "./components/PostList";
 import CreatePost from "./components/CreatePost";
 import HeroSection from "./components/HeroSection";
@@ -14,7 +14,7 @@ const App = () => {
   const [posts, setPosts] = useState([]);
 
   const addPost = (newPost) => {
-    setPosts((prevPosts) => [...prevPosts, newPost]); // ✅ Add new post to array
+    setPosts((prevPosts) => [...prevPosts, newPost]);
   };
 
   return (
